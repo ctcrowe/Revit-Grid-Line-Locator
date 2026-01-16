@@ -68,16 +68,7 @@ namespace TrackGridlineLocation
             hideTransaction = hideTransaction || transactionName.Equals("Worksets");
             hideTransaction = hideTransaction || transactionName.Equals("Sheet");
             hideTransaction = hideTransaction || transactionName.Equals("Select a Work Plane");
-            return hideTransaction;
-        }
-        public bool CheckGridTransactions()
-        {
-            hideTransaction = transactionName.Equals("Drag");
-            hideTransaction = hideTransaction || transactionName.Equals("Move");
-            hideTransaction = hideTransaction || transactionName.Equals("Toggle EQ");
-            hideTransaction = hideTransaction || transactionName.Equals("Edit dimension length");
-            hideTransaction = hideTransaction || transactionName.Equals("Toggle Pin");
-            hideTransaction = hideTransaction || transactionName.Equals("Unpin");
+            hideTransaction = hideTransaction || transactionName.Equals("NONE");
             return hideTransaction;
         }
     }
